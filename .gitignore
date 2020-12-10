@@ -1,0 +1,6 @@
+__pucache__/
+db.sqlite3
+*.puc
+.idea/
+venv/
+.git/
