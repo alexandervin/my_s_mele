@@ -30,6 +30,7 @@ h2 {
     float:right;
     width:30%;
     padding:10px;
+    border: 20px;
     background:#efefef; 
     height:100%;
 }
