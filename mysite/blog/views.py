@@ -6,8 +6,8 @@ from .forms import EmailPostForm, CommentForm
 
 
 def post_list(request):
-    object_list = Post.objects.all()
-    paginator = Paginator(object_list, 3)  # 3 posts in each page
+    object_list = Post.published.all()
+    paginator = Paginator(object_list, 3) # 3 posts in each page
     page = request.GET.get('page')
     try:
         posts = paginator.page(page)
@@ -51,7 +51,7 @@ def post_detail(request, year, month, day, post):
 
 
 class PostListView(ListView):
-    queryset = Post.objects.all()
+    queryset = Post.published.all()
     context_object_name = 'posts'
     paginate_by = 3
     template_name = 'blog/post/list.html'
