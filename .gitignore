@@ -1,6 +1,9 @@
-__pucache__/
+__pycache__/
 db.sqlite3
 *.puc
 .idea/
 venv/
 .git/
+venv37/
+venv385/
+.vscode/
