@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'taggit',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    'django.contrib.postgres',
 ]
 
 MIDDLEWARE = [
@@ -89,8 +90,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'blog1',
-        'USER': 'blog',
+        'NAME': 'db_blog1',
+        'USER': 'user_blog',
         'PASSWORD': '123',
         'HOST': '127.0.0.1',
         'PORT': '5432',
